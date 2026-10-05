@@ -38,6 +38,24 @@ const projects = [
   },
   {
     number: "02",
+    title: "MotionCorrect",
+    subtitle: "AI fitness coach & motion tracker",
+    description:
+      "A full-stack computer vision and AI coaching application that tracks body joints live in the browser via MediaPipe, calculates rep forms, and provides real-time intelligent feedback using a local Qwen LLM microservice.",
+    stack: [
+      "React",
+      "Vite",
+      "MediaPipe",
+      "Flask",
+      "PyTorch",
+      "Qwen LLM",
+      "MySQL",
+    ],
+    href: "https://github.com/TawhidulIslam0/MotionCorrect",
+    featured: true,
+  },
+  {
+    number: "03",
     title: "Journey",
     subtitle: "AI-assisted fitness tracking",
     description:
@@ -54,7 +72,7 @@ const projects = [
     featured: false,
   },
   {
-    number: "03",
+    number: "04",
     title: "Full-Stack CRUD Application",
     subtitle: "Client + server web application",
     description:
@@ -112,6 +130,7 @@ const skillGroups = [
       "Alembic",
       "Redis",
       "Kafka",
+      "MySQL",
     ],
   },
   {
@@ -126,6 +145,7 @@ const skillGroups = [
       "GitHub",
       "PyTorch",
       "OpenAI API",
+      "MediaPipe",
     ],
   },
 ];
@@ -210,7 +230,7 @@ function App() {
 
             <p className="hero-text">
               I'm Tawhidul — a full-stack developer focused on AI-powered
-              products,frontend development, resilient backends, and thoughtful user experiences.
+              products, frontend development, resilient backends, and thoughtful user experiences.
             </p>
 
             <div className="hero-actions">
@@ -261,16 +281,16 @@ function App() {
             <pre>
               <code>
                 <span className="code-muted">const</span> developer = {"{"}
-                {"\n  "}name:{" "}
-                <span className="code-string">"Tawhidul Islam"</span>,{"\n  "}
+                {"\n   "}name:{" "}
+                <span className="code-string">"Tawhidul Islam"</span>,{"\n   "}
                 role: <span className="code-string">"Full-Stack Engineer"</span>
-                ,{"\n  "}focus: [{"\n    "}
+                ,{"\n   "}focus: [{"\n     "}
                 <span className="code-string">"Frontend Development"</span>,
-                {"\n    "}
-                <span className="code-string">"Backend Systems"</span>,{"\n    "}
-                <span className="code-string">"AI/ML"</span>,{"\n    "}
+                {"\n     "}
+                <span className="code-string">"Backend Systems"</span>,{"\n     "}
+                <span className="code-string">"AI/ML"</span>,{"\n     "}
                 <span className="code-string">"Cloud Architecture"</span>
-                {"\n  "}],{"\n  "}ships:{" "}
+                {"\n   "}],{"\n   "}ships:{" "}
                 <span className="code-number">true</span>
                 {"\n"}
                 {"}"};
@@ -330,6 +350,8 @@ function App() {
                 <div className="project-icon">
                   {project.title === "IntelliDoc" ? (
                     <BrainCircuit size={23} />
+                  ) : project.title === "MotionCorrect" ? (
+                    <Sparkles size={23} />
                   ) : project.title === "Journey" ? (
                     <Sparkles size={23} />
                   ) : (
@@ -492,14 +514,24 @@ function App() {
               applications.
             </p>
 
-            <a
-              className="text-link"
-              href="/resume.pdf"
-              target="_blank"
-              rel="noreferrer"
-            >
-              View my resume <ArrowUpRight size={16} />
-            </a>
+            <div className="about-links" style={{ display: "flex", gap: "24px", flexWrap: "wrap", marginTop: "16px" }}>
+              <a
+                className="text-link"
+                href="/resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View my resume <ArrowUpRight size={16} />
+              </a>
+              <a
+                className="text-link"
+                href="/Tawhidul_Islam_Cover_Letter(1).pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View my cover letter <ArrowUpRight size={16} />
+              </a>
+            </div>
           </div>
         </section>
 
