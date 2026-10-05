@@ -38,7 +38,7 @@ const projects = [
   },
   {
     number: "02",
-    title: "MotionCorrect",
+    title: "FitnessMotion",
     subtitle: "AI fitness coach & motion tracker",
     description:
       "A full-stack computer vision and AI coaching application that tracks body joints live in the browser via MediaPipe, calculates rep forms, and provides real-time intelligent feedback using a local Qwen LLM microservice.",
@@ -51,7 +51,7 @@ const projects = [
       "Qwen LLM",
       "MySQL",
     ],
-    href: "https://github.com/TawhidulIslam0/MotionCorrect",
+    href: "https://github.com/TawhidulIslam0/FitnessMotion",
     featured: true,
   },
   {
@@ -350,7 +350,7 @@ function App() {
                 <div className="project-icon">
                   {project.title === "IntelliDoc" ? (
                     <BrainCircuit size={23} />
-                  ) : project.title === "MotionCorrect" ? (
+                  ) : project.title === "FitnessMotion" ? (
                     <Sparkles size={23} />
                   ) : project.title === "Journey" ? (
                     <Sparkles size={23} />
