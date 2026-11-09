@@ -1,10 +1,12 @@
 import {
   ArrowUpRight,
+  BookOpen,
   BrainCircuit,
   Cloud,
   Code2,
   Database,
   Github,
+  Languages,
   Linkedin,
   Mail,
   Menu,
@@ -38,7 +40,7 @@ const projects = [
   },
   {
     number: "02",
-    title: "MotionCorrect",
+    title: "FitnessMotion",
     subtitle: "AI fitness coach & motion tracker",
     description:
       "A full-stack computer vision and AI coaching application that tracks body joints live in the browser via MediaPipe, calculates rep forms, and provides real-time intelligent feedback using a local Qwen LLM microservice.",
@@ -51,11 +53,48 @@ const projects = [
       "Qwen LLM",
       "MySQL",
     ],
-    href: "https://github.com/TawhidulIslam0/MotionCorrect",
+    href: "https://github.com/TawhidulIslam0/FitnessMotion",
     featured: true,
   },
   {
     number: "03",
+    title: "OpenBook",
+    subtitle: "Flutter eBook reader & library",
+    description:
+      "A feature-rich Flutter ebook reader for discovering public-domain books via Gutendex/Project Gutenberg. Features live search with debouncing, EPUB reading with Iridium, custom reading shelves, offline caching, and text-to-speech audio controls.",
+    stack: [
+      "Flutter",
+      "Dart",
+      "Iridium EPUB Engine",
+      "Gutendex API",
+      "TTS",
+      "SQLite",
+    ],
+    href: "https://github.com/TawhidulIslam0/OpenBook--ebook-app",
+    featured: false,
+  },
+  {
+    number: "04",
+    title: "Translify",
+    subtitle: "Real-time multimodal translation system",
+    description:
+      "A privacy-focused mobile and backend translation platform combining camera OCR and conversational speech-to-text. Powered by a FastAPI microservices architecture, self-hosted LibreTranslate, OpenCV, and PostgreSQL.",
+    stack: [
+      "Flutter",
+      "Dart",
+      "Python",
+      "FastAPI",
+      "OpenCV",
+      "Pytesseract",
+      "LibreTranslate",
+      "Docker",
+      "PostgreSQL",
+    ],
+    href: "https://github.com/TawhidulIslam0/Translify",
+    featured: false,
+  },
+  {
+    number: "05",
     title: "Journey",
     subtitle: "AI-assisted fitness tracking",
     description:
@@ -72,7 +111,7 @@ const projects = [
     featured: false,
   },
   {
-    number: "04",
+    number: "06",
     title: "Full-Stack CRUD Application",
     subtitle: "Client + server web application",
     description:
@@ -112,6 +151,7 @@ const skillGroups = [
     items: [
       "React",
       "Vite",
+      "Flutter",
       "Node.js",
       "Express",
       "Flask",
@@ -146,6 +186,7 @@ const skillGroups = [
       "PyTorch",
       "OpenAI API",
       "MediaPipe",
+      "OpenCV",
     ],
   },
 ];
@@ -229,8 +270,8 @@ function App() {
             </h1>
 
             <p className="hero-text">
-              I'm Tawhidul — a full-stack developer focused on AI-powered
-              products, frontend development, resilient backends, and thoughtful user experiences.
+              I'm Tawhidul — a Software Engineer focused on cross-platform mobile & web apps, 
+              AI-powered products, and resilient backend systems.
             </p>
 
             <div className="hero-actions">
@@ -283,10 +324,11 @@ function App() {
                 <span className="code-muted">const</span> developer = {"{"}
                 {"\n   "}name:{" "}
                 <span className="code-string">"Tawhidul Islam"</span>,{"\n   "}
-                role: <span className="code-string">"Full-Stack Engineer"</span>
+                role: <span className="code-string">"Software Engineer"</span>
                 ,{"\n   "}focus: [{"\n     "}
-                <span className="code-string">"Frontend Development"</span>,
+                <span className="code-string">"Mobile & Web Apps"</span>,
                 {"\n     "}
+                <span className="code-string">"Frontend Development"</span>,{"\n     "}
                 <span className="code-string">"Backend Systems"</span>,{"\n     "}
                 <span className="code-string">"AI/ML"</span>,{"\n     "}
                 <span className="code-string">"Cloud Architecture"</span>
@@ -350,8 +392,12 @@ function App() {
                 <div className="project-icon">
                   {project.title === "IntelliDoc" ? (
                     <BrainCircuit size={23} />
-                  ) : project.title === "MotionCorrect" ? (
+                  ) : project.title === "FitnessMotion" ? (
                     <Sparkles size={23} />
+                  ) : project.title === "OpenBook" ? (
+                    <BookOpen size={23} />
+                  ) : project.title === "Translify" ? (
+                    <Languages size={23} />
                   ) : project.title === "Journey" ? (
                     <Sparkles size={23} />
                   ) : (
@@ -499,19 +545,19 @@ function App() {
           <div className="about-copy">
             <span className="section-kicker">A little about me</span>
 
-            <h2>Curious about the whole stack.</h2>
+<h2>Curious about the whole stack.</h2>
 
             <p>
-              I earned my B.A. in Computer Science from Hunter College, CUNY.
-              I enjoy moving between product design, application code, data
-              systems, and infrastructure — especially when the problem
-              requires more than one layer.
+            I earned my B.A. in Computer Science from Hunter College, CUNY.
+            I enjoy moving between frontend product design, cross-platform mobile apps, 
+            data systems, and backend infrastructure — especially when a solution 
+            spans multiple layers of the stack.
             </p>
 
             <p>
-              My recent work spans AI integration, semantic search,
-              event-driven architecture, cloud systems, and cross-platform
-              applications.
+            My recent work spans AI integration, multimodal translation microservices, 
+            semantic search, cross-platform mobile development (Flutter/Dart), and 
+            event-driven cloud architectures.
             </p>
 
             <div className="about-links" style={{ display: "flex", gap: "24px", flexWrap: "wrap", marginTop: "16px" }}>
