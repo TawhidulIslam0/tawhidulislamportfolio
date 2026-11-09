@@ -563,7 +563,7 @@ function App() {
             <div className="about-links" style={{ display: "flex", gap: "24px", flexWrap: "wrap", marginTop: "16px" }}>
               <a
                 className="text-link"
-                href="/resume.pdf"
+                href="/Tawhidul Islam Resume.pdf"
                 target="_blank"
                 rel="noreferrer"
               >
