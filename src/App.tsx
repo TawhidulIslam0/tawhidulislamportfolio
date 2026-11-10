@@ -571,7 +571,7 @@ function App() {
               </a>
               <a
                 className="text-link"
-                href="/Tawhidul_Islam_Cover_Letter(1).pdf"
+                href="/Tawhidul Islam Cover Letter.pdf"
                 target="_blank"
                 rel="noreferrer"
               >
